@@ -1,0 +1,13 @@
+//
+//  release.example.xcconfig
+//  LeBaluchon
+//
+//  Created by XenoX on 06/04/2019.
+//  Copyright © 2019 XenoX. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+API_CLIENT_FIXER_SECRET = YOUR_API_CLIENT_FIXER_SECRET_FOR_PRODUCTION
+API_CLIENT_TRANSLATE_SECRET = YOUR_API_CLIENT_TRANSLATE_FOR_PRODUCTION

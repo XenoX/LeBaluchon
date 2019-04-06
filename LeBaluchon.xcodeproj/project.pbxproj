@@ -14,6 +14,9 @@
 		D5B2664322569EF800607635 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5B2664222569EF800607635 /* Assets.xcassets */; };
 		D5B2664622569EF800607635 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5B2664422569EF800607635 /* LaunchScreen.storyboard */; };
 		D5B2665122569EF900607635 /* LeBaluchonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B2665022569EF900607635 /* LeBaluchonTests.swift */; };
+		D5D17F552258ED590049FB02 /* CurrencyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D17F542258ED590049FB02 /* CurrencyController.swift */; };
+		D5D17F57225901000049FB02 /* CurrencyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D17F56225901000049FB02 /* CurrencyService.swift */; };
+		D5D17F5E225937910049FB02 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5D17F5D225937910049FB02 /* Currency.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,13 @@
 		D5B2664C22569EF800607635 /* LeBaluchonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeBaluchonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5B2665022569EF900607635 /* LeBaluchonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeBaluchonTests.swift; sourceTree = "<group>"; };
 		D5B2665222569EF900607635 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5D17F542258ED590049FB02 /* CurrencyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyController.swift; sourceTree = "<group>"; };
+		D5D17F56225901000049FB02 /* CurrencyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyService.swift; sourceTree = "<group>"; };
+		D5D17F5922590C660049FB02 /* debug.example.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = debug.example.xcconfig; sourceTree = "<group>"; };
+		D5D17F5A22590D260049FB02 /* debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = debug.xcconfig; sourceTree = "<group>"; };
+		D5D17F5B22590DB10049FB02 /* release.example.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = release.example.xcconfig; sourceTree = "<group>"; };
+		D5D17F5C22590E060049FB02 /* release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = release.xcconfig; sourceTree = "<group>"; };
+		D5D17F5D225937910049FB02 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,11 +89,11 @@
 		D5B2663722569EF500607635 /* LeBaluchon */ = {
 			isa = PBXGroup;
 			children = (
+				D5D17F5822590C0A0049FB02 /* BuildConfig */,
+				D5B2665D2256A17000607635 /* Controller */,
+				D5B2665C2256A16B00607635 /* View */,
+				D5B2665B2256A16600607635 /* Model */,
 				D5B2663822569EF500607635 /* AppDelegate.swift */,
-				D5B2663A22569EF500607635 /* ViewController.swift */,
-				D5B2663C22569EF500607635 /* Main.storyboard */,
-				D5B2664222569EF800607635 /* Assets.xcassets */,
-				D5B2664422569EF800607635 /* LaunchScreen.storyboard */,
 				D5B2664722569EF800607635 /* Info.plist */,
 				D5B2663F22569EF500607635 /* LeBaluchon.xcdatamodeld */,
 			);
@@ -97,6 +107,45 @@
 				D5B2665222569EF900607635 /* Info.plist */,
 			);
 			path = LeBaluchonTests;
+			sourceTree = "<group>";
+		};
+		D5B2665B2256A16600607635 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D5D17F56225901000049FB02 /* CurrencyService.swift */,
+				D5D17F5D225937910049FB02 /* Currency.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D5B2665C2256A16B00607635 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D5B2663C22569EF500607635 /* Main.storyboard */,
+				D5B2664422569EF800607635 /* LaunchScreen.storyboard */,
+				D5B2664222569EF800607635 /* Assets.xcassets */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D5B2665D2256A17000607635 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D5B2663A22569EF500607635 /* ViewController.swift */,
+				D5D17F542258ED590049FB02 /* CurrencyController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D5D17F5822590C0A0049FB02 /* BuildConfig */ = {
+			isa = PBXGroup;
+			children = (
+				D5D17F5922590C660049FB02 /* debug.example.xcconfig */,
+				D5D17F5A22590D260049FB02 /* debug.xcconfig */,
+				D5D17F5B22590DB10049FB02 /* release.example.xcconfig */,
+				D5D17F5C22590E060049FB02 /* release.xcconfig */,
+			);
+			path = BuildConfig;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,8 +249,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5D17F5E225937910049FB02 /* Currency.swift in Sources */,
+				D5D17F57225901000049FB02 /* CurrencyService.swift in Sources */,
 				D5B2663B22569EF500607635 /* ViewController.swift in Sources */,
 				D5B2663922569EF500607635 /* AppDelegate.swift in Sources */,
+				D5D17F552258ED590049FB02 /* CurrencyController.swift in Sources */,
 				D5B2664122569EF500607635 /* LeBaluchon.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -362,11 +414,13 @@
 		};
 		D5B2665622569EF900607635 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5D17F5A22590D260049FB02 /* debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HB3HC8SJ9J;
 				INFOPLIST_FILE = LeBaluchon/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -374,17 +428,19 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.xenox.LeBaluchon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		D5B2665722569EF900607635 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5D17F5C22590E060049FB02 /* release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HB3HC8SJ9J;
 				INFOPLIST_FILE = LeBaluchon/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -392,7 +448,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.xenox.LeBaluchon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

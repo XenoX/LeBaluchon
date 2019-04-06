@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gph-7M-cSr">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Weather-->
+        <scene sceneID="o1j-tL-j9k">
+            <objects>
+                <viewController id="4qW-FU-xWP" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jFX-Gx-7Xi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.90972405670000001" green="0.90985494850000004" blue="0.9096954465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="v09-Tb-ALR"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Weather" image="weather" id="dgn-fu-FrY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wgA-lt-DJw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1329" y="660"/>
+        </scene>
+        <!--Currency-->
+        <scene sceneID="Chm-pd-Ril">
+            <objects>
+                <viewController id="Xa9-ff-Wvm" customClass="CurrencyController" customModule="LeBaluchon" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vCL-B2-mwo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="10" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DYx-ha-egi">
+                                <rect key="frame" x="20" y="498" width="278" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="uBw-X3-8WE"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad" keyboardAppearance="alert" returnKeyType="go" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                <connections>
+                                    <action selector="didEndEditValue" destination="Xa9-ff-Wvm" eventType="editingDidEnd" id="woM-FO-zrw"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="€" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="bi4-Sq-fcT">
+                                <rect key="frame" x="318" y="512" width="37" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <color key="textColor" red="1" green="0.72348177430000005" blue="0.319129616" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="PRY-pm-98B">
+                                <rect key="frame" x="318" y="220.5" width="37" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <color key="textColor" red="1" green="0.72348177430000005" blue="0.319129616" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KQ1-jq-eq6">
+                                <rect key="frame" x="20" y="30" width="278" height="453"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90972405670000001" green="0.90985494850000004" blue="0.9096954465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="PRY-pm-98B" firstAttribute="leading" relation="lessThanOrEqual" secondItem="KQ1-jq-eq6" secondAttribute="trailing" constant="20" id="4b1-iP-WGz"/>
+                            <constraint firstItem="DYx-ha-egi" firstAttribute="leading" secondItem="KQ1-jq-eq6" secondAttribute="leading" id="AIn-0H-s5S"/>
+                            <constraint firstItem="lS9-WM-iF6" firstAttribute="bottom" secondItem="DYx-ha-egi" secondAttribute="bottom" constant="20" id="Fty-Lt-sIt"/>
+                            <constraint firstItem="bi4-Sq-fcT" firstAttribute="centerX" secondItem="PRY-pm-98B" secondAttribute="centerX" id="GSE-2x-CRV"/>
+                            <constraint firstItem="PRY-pm-98B" firstAttribute="centerY" secondItem="KQ1-jq-eq6" secondAttribute="centerY" id="IiB-kK-QXb"/>
+                            <constraint firstItem="bi4-Sq-fcT" firstAttribute="centerY" secondItem="DYx-ha-egi" secondAttribute="centerY" id="baO-Cq-ezR"/>
+                            <constraint firstItem="KQ1-jq-eq6" firstAttribute="top" secondItem="lS9-WM-iF6" secondAttribute="top" constant="10" id="foH-Te-yv7"/>
+                            <constraint firstItem="KQ1-jq-eq6" firstAttribute="leading" secondItem="lS9-WM-iF6" secondAttribute="leading" constant="20" id="hVO-o4-5wG"/>
+                            <constraint firstItem="DYx-ha-egi" firstAttribute="top" secondItem="KQ1-jq-eq6" secondAttribute="bottom" constant="15" id="iFE-kz-AKS"/>
+                            <constraint firstItem="DYx-ha-egi" firstAttribute="trailing" secondItem="KQ1-jq-eq6" secondAttribute="trailing" id="oGx-2C-OIn"/>
+                            <constraint firstItem="lS9-WM-iF6" firstAttribute="trailing" secondItem="PRY-pm-98B" secondAttribute="trailing" constant="20" id="uwt-Zs-cC2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lS9-WM-iF6"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="UKK-qe-z0L" appends="YES" id="mKD-Wq-yY5"/>
+                        </connections>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Currency" image="currency" id="8OI-GV-kHh"/>
+                    <connections>
+                        <outlet property="resultTextView" destination="KQ1-jq-eq6" id="fiF-Rw-9ad"/>
+                        <outlet property="valueTextField" destination="DYx-ha-egi" id="uZR-DY-9D2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VNa-IW-GvP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="UKK-qe-z0L">
+                    <connections>
+                        <action selector="dismissKeyboard:" destination="Xa9-ff-Wvm" id="vVd-KZ-Zvm"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="317.60000000000002" y="1034.9325337331336"/>
+        </scene>
+        <!--Translate-->
+        <scene sceneID="4Ie-hT-AXw">
+            <objects>
+                <viewController id="M4A-aM-HmV" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qWy-cO-57B">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="DEO-5I-lea">
+                                <rect key="frame" x="20" y="408" width="335" height="150"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="DEO-5I-lea" secondAttribute="height" multiplier="67:30" id="ehW-62-LHw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes" spellCheckingType="yes" keyboardAppearance="alert" returnKeyType="send" enablesReturnKeyAutomatically="YES" smartDashesType="yes" smartInsertDeleteType="yes"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O3X-gu-Yau">
+                                <rect key="frame" x="20" y="573" width="335" height="30"/>
+                                <color key="backgroundColor" red="0.4274110794" green="0.42747646569999997" blue="0.42739671470000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="BeP-2k-vrQ"/>
+                                </constraints>
+                                <state key="normal" title="Traduire">
+                                    <color key="titleColor" red="1" green="0.72348177430000005" blue="0.319129616" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90972405672073364" green="0.9098549485206604" blue="0.90969544649124146" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3iw-9U-VRW" firstAttribute="trailing" secondItem="DEO-5I-lea" secondAttribute="trailing" constant="20" id="2Ps-jv-Hw7"/>
+                            <constraint firstItem="3iw-9U-VRW" firstAttribute="bottom" secondItem="O3X-gu-Yau" secondAttribute="bottom" constant="15" id="3rQ-oJ-TGr"/>
+                            <constraint firstItem="O3X-gu-Yau" firstAttribute="leading" secondItem="3iw-9U-VRW" secondAttribute="leading" constant="20" id="AMy-ZX-9tD"/>
+                            <constraint firstItem="DEO-5I-lea" firstAttribute="leading" secondItem="3iw-9U-VRW" secondAttribute="leading" constant="20" id="FiH-05-Es5"/>
+                            <constraint firstItem="3iw-9U-VRW" firstAttribute="trailing" secondItem="O3X-gu-Yau" secondAttribute="trailing" constant="20" id="aoC-ar-xOE"/>
+                            <constraint firstItem="3iw-9U-VRW" firstAttribute="bottom" secondItem="DEO-5I-lea" secondAttribute="bottom" constant="60" id="mhE-HS-MTq"/>
+                            <constraint firstItem="DEO-5I-lea" firstAttribute="centerX" secondItem="qWy-cO-57B" secondAttribute="centerX" id="rJG-q8-v0N"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3iw-9U-VRW"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Translate" image="translate" id="HeS-ez-6wd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ObP-Ah-sMG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1329" y="-81"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="rYE-fT-frN">
+            <objects>
+                <tabBarController id="gph-7M-cSr" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" id="veS-Ti-KUY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.37251365180000001" green="0.37257164720000002" blue="0.37250098590000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="1" green="0.72348177430000005" blue="0.319129616" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="M4A-aM-HmV" kind="relationship" relationship="viewControllers" id="OI0-56-hhc"/>
+                        <segue destination="4qW-FU-xWP" kind="relationship" relationship="viewControllers" id="lKf-lQ-VPY"/>
+                        <segue destination="Xa9-ff-Wvm" kind="relationship" relationship="viewControllers" id="0Ma-Mn-MAF"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l7g-jF-BCe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="319" y="287"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="currency" width="32" height="32"/>
+        <image name="translate" width="32" height="32"/>
+        <image name="weather" width="32" height="32"/>
+    </resources>
+</document>
