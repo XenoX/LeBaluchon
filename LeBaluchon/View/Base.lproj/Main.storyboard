@@ -102,7 +102,7 @@
         <!--Translate-->
         <scene sceneID="4Ie-hT-AXw">
             <objects>
-                <viewController id="M4A-aM-HmV" sceneMemberID="viewController">
+                <viewController id="M4A-aM-HmV" customClass="TranslateController" customModule="LeBaluchon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qWy-cO-57B">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -125,25 +125,51 @@
                                 <state key="normal" title="Traduire">
                                     <color key="titleColor" red="1" green="0.72348177430000005" blue="0.319129616" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="didTapTranslateButton" destination="M4A-aM-HmV" eventType="touchUpInside" id="f6b-5P-lNE"/>
+                                </connections>
                             </button>
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0Ba-mw-zQC">
+                                <rect key="frame" x="20" y="35" width="335" height="358"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.90972405672073364" green="0.9098549485206604" blue="0.90969544649124146" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="3iw-9U-VRW" firstAttribute="trailing" secondItem="DEO-5I-lea" secondAttribute="trailing" constant="20" id="2Ps-jv-Hw7"/>
                             <constraint firstItem="3iw-9U-VRW" firstAttribute="bottom" secondItem="O3X-gu-Yau" secondAttribute="bottom" constant="15" id="3rQ-oJ-TGr"/>
+                            <constraint firstItem="0Ba-mw-zQC" firstAttribute="top" secondItem="3iw-9U-VRW" secondAttribute="top" constant="15" id="7jq-8V-mMR"/>
                             <constraint firstItem="O3X-gu-Yau" firstAttribute="leading" secondItem="3iw-9U-VRW" secondAttribute="leading" constant="20" id="AMy-ZX-9tD"/>
                             <constraint firstItem="DEO-5I-lea" firstAttribute="leading" secondItem="3iw-9U-VRW" secondAttribute="leading" constant="20" id="FiH-05-Es5"/>
+                            <constraint firstItem="3iw-9U-VRW" firstAttribute="trailing" secondItem="0Ba-mw-zQC" secondAttribute="trailing" constant="20" id="S4Z-eu-5hv"/>
+                            <constraint firstItem="DEO-5I-lea" firstAttribute="top" secondItem="0Ba-mw-zQC" secondAttribute="bottom" constant="15" id="TXY-Xg-BDu"/>
                             <constraint firstItem="3iw-9U-VRW" firstAttribute="trailing" secondItem="O3X-gu-Yau" secondAttribute="trailing" constant="20" id="aoC-ar-xOE"/>
                             <constraint firstItem="3iw-9U-VRW" firstAttribute="bottom" secondItem="DEO-5I-lea" secondAttribute="bottom" constant="60" id="mhE-HS-MTq"/>
                             <constraint firstItem="DEO-5I-lea" firstAttribute="centerX" secondItem="qWy-cO-57B" secondAttribute="centerX" id="rJG-q8-v0N"/>
+                            <constraint firstItem="0Ba-mw-zQC" firstAttribute="leading" secondItem="3iw-9U-VRW" secondAttribute="leading" constant="20" id="uWO-gr-0nb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3iw-9U-VRW"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Ld9-an-NGw" appends="YES" id="1Ju-KM-ll5"/>
+                        </connections>
                     </view>
                     <tabBarItem key="tabBarItem" title="Translate" image="translate" id="HeS-ez-6wd"/>
+                    <connections>
+                        <outlet property="resultTextView" destination="0Ba-mw-zQC" id="zup-Fq-zkp"/>
+                        <outlet property="valueTextView" destination="DEO-5I-lea" id="gJD-C9-DC6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ObP-Ah-sMG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Ld9-an-NGw">
+                    <connections>
+                        <action selector="dismissKeyboard:" destination="M4A-aM-HmV" id="GMn-d9-Dxu"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1329" y="-81"/>
+            <point key="canvasLocation" x="1328.8" y="-81.409295352323838"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="rYE-fT-frN">

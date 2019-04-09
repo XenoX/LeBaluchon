@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D58A1BF3225A65E400D87D97 /* TranslateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58A1BF2225A65E400D87D97 /* TranslateController.swift */; };
+		D58A1BF5225A7EDB00D87D97 /* TranslateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58A1BF4225A7EDB00D87D97 /* TranslateService.swift */; };
+		D58A1BF7225A809800D87D97 /* Translate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58A1BF6225A809800D87D97 /* Translate.swift */; };
+		D58A1BFA225AB26300D87D97 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58A1BF9225AB26300D87D97 /* UIViewController.swift */; };
 		D5B2663922569EF500607635 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B2663822569EF500607635 /* AppDelegate.swift */; };
 		D5B2663B22569EF500607635 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B2663A22569EF500607635 /* ViewController.swift */; };
 		D5B2663E22569EF500607635 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5B2663C22569EF500607635 /* Main.storyboard */; };
@@ -30,6 +34,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D58A1BF2225A65E400D87D97 /* TranslateController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateController.swift; sourceTree = "<group>"; };
+		D58A1BF4225A7EDB00D87D97 /* TranslateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateService.swift; sourceTree = "<group>"; };
+		D58A1BF6225A809800D87D97 /* Translate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translate.swift; sourceTree = "<group>"; };
+		D58A1BF9225AB26300D87D97 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		D5B2663522569EF500607635 /* LeBaluchon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeBaluchon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5B2663822569EF500607635 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5B2663A22569EF500607635 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +76,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D58A1BF8225AB23B00D87D97 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D58A1BF9225AB26300D87D97 /* UIViewController.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		D5B2662C22569EF500607635 = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +105,7 @@
 		D5B2663722569EF500607635 /* LeBaluchon */ = {
 			isa = PBXGroup;
 			children = (
+				D58A1BF8225AB23B00D87D97 /* Extension */,
 				D5D17F5822590C0A0049FB02 /* BuildConfig */,
 				D5B2665D2256A17000607635 /* Controller */,
 				D5B2665C2256A16B00607635 /* View */,
@@ -114,6 +131,8 @@
 			children = (
 				D5D17F56225901000049FB02 /* CurrencyService.swift */,
 				D5D17F5D225937910049FB02 /* Currency.swift */,
+				D58A1BF4225A7EDB00D87D97 /* TranslateService.swift */,
+				D58A1BF6225A809800D87D97 /* Translate.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -133,6 +152,7 @@
 			children = (
 				D5B2663A22569EF500607635 /* ViewController.swift */,
 				D5D17F542258ED590049FB02 /* CurrencyController.swift */,
+				D58A1BF2225A65E400D87D97 /* TranslateController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -249,12 +269,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D58A1BF5225A7EDB00D87D97 /* TranslateService.swift in Sources */,
 				D5D17F5E225937910049FB02 /* Currency.swift in Sources */,
+				D58A1BFA225AB26300D87D97 /* UIViewController.swift in Sources */,
 				D5D17F57225901000049FB02 /* CurrencyService.swift in Sources */,
 				D5B2663B22569EF500607635 /* ViewController.swift in Sources */,
 				D5B2663922569EF500607635 /* AppDelegate.swift in Sources */,
+				D58A1BF7225A809800D87D97 /* Translate.swift in Sources */,
 				D5D17F552258ED590049FB02 /* CurrencyController.swift in Sources */,
 				D5B2664122569EF500607635 /* LeBaluchon.xcdatamodeld in Sources */,
+				D58A1BF3225A65E400D87D97 /* TranslateController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
