@@ -15,8 +15,8 @@ class TranslateService {
     private var session = URLSession(configuration: .default)
     private var task: URLSessionTask?
 
-    private var token: String {
-        return Bundle.main.object(forInfoDictionaryKey: "API_CLIENT_TRANSLATE_SECRET") as? String ?? ""
+    private var token: String? {
+        return Bundle.main.object(forInfoDictionaryKey: "API_CLIENT_TRANSLATE_SECRET") as? String
     }
 
     private let endpoint: String = "https://translation.googleapis.com/language/translate/v2?key="
@@ -52,7 +52,7 @@ class TranslateService {
     }
 
     private func createRequest(text: String) -> URLRequest {
-        var request = URLRequest(url: URL(string: endpoint + token)!)
+        var request = URLRequest(url: URL(string: endpoint + token!)!)
         request.httpMethod = "POST"
         request.httpBody = "q=\(text)&target=EN&format=text".data(using: .utf8)
 

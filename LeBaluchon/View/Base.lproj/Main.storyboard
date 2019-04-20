@@ -12,14 +12,68 @@
         <!--Weather-->
         <scene sceneID="o1j-tL-j9k">
             <objects>
-                <viewController id="4qW-FU-xWP" sceneMemberID="viewController">
+                <viewController id="4qW-FU-xWP" customClass="WeatherController" customModule="LeBaluchon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jFX-Gx-7Xi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20 °C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HFI-Wi-awr">
+                                <rect key="frame" x="311" y="100" width="44" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="HFI-Wi-awr" secondAttribute="height" multiplier="44:21" id="53S-DV-tTC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paris :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QC5-Ea-VZ9">
+                                <rect key="frame" x="20" y="517" width="47" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="QC5-Ea-VZ9" secondAttribute="height" multiplier="47:21" id="gHD-D2-cw6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20 °C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YPd-gm-PfD">
+                                <rect key="frame" x="311" y="517" width="44" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="YPd-gm-PfD" secondAttribute="height" multiplier="44:21" id="1uw-yQ-UOH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New York :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ui-Kf-CuJ">
+                                <rect key="frame" x="20" y="100" width="82" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="2Ui-Kf-CuJ" secondAttribute="height" multiplier="82:21" id="HhJ-3U-Zow"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="0.90972405670000001" green="0.90985494850000004" blue="0.9096954465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="v09-Tb-ALR" firstAttribute="bottom" secondItem="QC5-Ea-VZ9" secondAttribute="bottom" constant="80" id="42A-8d-biO"/>
+                            <constraint firstItem="2Ui-Kf-CuJ" firstAttribute="top" secondItem="v09-Tb-ALR" secondAttribute="top" constant="80" id="BHu-JV-M2p"/>
+                            <constraint firstItem="YPd-gm-PfD" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="QC5-Ea-VZ9" secondAttribute="trailing" constant="8" symbolic="YES" id="PMj-JQ-Uy9"/>
+                            <constraint firstItem="2Ui-Kf-CuJ" firstAttribute="leading" secondItem="v09-Tb-ALR" secondAttribute="leading" constant="20" id="XzT-Jc-EfK"/>
+                            <constraint firstItem="HFI-Wi-awr" firstAttribute="leading" secondItem="2Ui-Kf-CuJ" secondAttribute="trailing" constant="209" id="Y8g-JW-9xw"/>
+                            <constraint firstItem="v09-Tb-ALR" firstAttribute="trailing" secondItem="YPd-gm-PfD" secondAttribute="trailing" constant="20" id="YM5-fn-pM3"/>
+                            <constraint firstItem="v09-Tb-ALR" firstAttribute="bottom" secondItem="YPd-gm-PfD" secondAttribute="bottom" constant="80" id="Zri-KK-bWl"/>
+                            <constraint firstItem="QC5-Ea-VZ9" firstAttribute="leading" secondItem="v09-Tb-ALR" secondAttribute="leading" constant="20" id="aSN-ec-Lwu"/>
+                            <constraint firstItem="v09-Tb-ALR" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="HFI-Wi-awr" secondAttribute="trailing" id="g5I-gm-7Gy"/>
+                            <constraint firstItem="HFI-Wi-awr" firstAttribute="top" secondItem="v09-Tb-ALR" secondAttribute="top" constant="80" id="s5I-qg-82V"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="v09-Tb-ALR"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Weather" image="weather" id="dgn-fu-FrY"/>
+                    <connections>
+                        <outlet property="NYTempLabel" destination="HFI-Wi-awr" id="xJ3-RT-75X"/>
+                        <outlet property="ParisTempLabel" destination="YPd-gm-PfD" id="3PC-SX-xmw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wgA-lt-DJw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -131,7 +185,7 @@
                             </button>
                             <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0Ba-mw-zQC">
                                 <rect key="frame" x="20" y="35" width="335" height="358"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.90972405670000001" green="0.90985494850000004" blue="0.9096954465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>

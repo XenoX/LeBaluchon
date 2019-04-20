@@ -15,8 +15,8 @@ class CurrencyService {
     private var session = URLSession(configuration: .default)
     private var task: URLSessionTask?
 
-    private var token: String {
-        return Bundle.main.object(forInfoDictionaryKey: "API_CLIENT_FIXER_SECRET") as? String ?? ""
+    private var token: String? {
+        return Bundle.main.object(forInfoDictionaryKey: "API_CLIENT_FIXER_SECRET") as? String
     }
 
     private let endpoint: String = "http://data.fixer.io/api/latest?access_key="
@@ -28,7 +28,7 @@ class CurrencyService {
     func getCurrency(callback: @escaping (Bool, Currency?) -> Void) {
         task?.cancel()
 
-        task = session.dataTask(with: URL(string: endpoint + token)!, completionHandler: { (data, response, error) in
+        task = session.dataTask(with: URL(string: endpoint + token!)!, completionHandler: { (data, response, error) in
             DispatchQueue.main.async {
                 guard let data = data, error == nil else {
                     return callback(false, nil)

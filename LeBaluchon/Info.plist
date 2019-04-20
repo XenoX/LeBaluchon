@@ -11,6 +11,8 @@
 	<string>$(API_CLIENT_TRANSLATE_SECRET)</string>
 	<key>API_CLIENT_FIXER_SECRET</key>
 	<string>$(API_CLIENT_FIXER_SECRET)</string>
+	<key>API_CLIENT_WEATHER_SECRET</key>
+	<string>$(API_CLIENT_WEATHER_SECRET)</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
