@@ -14,6 +14,7 @@
 		D5324390226934B7009632D9 /* FakeResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D532438F226934B7009632D9 /* FakeResponseData.swift */; };
 		D532439222693503009632D9 /* URLSessionFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = D532439122693503009632D9 /* URLSessionFake.swift */; };
 		D532439622693583009632D9 /* CurrencyServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D532439522693583009632D9 /* CurrencyServiceTests.swift */; };
+		D57606A4234E2AD6008C5DA6 /* release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = D57606A3234E2AD6008C5DA6 /* release.xcconfig */; };
 		D57E3D75226B727E005C018F /* GoogleTranslate.json in Resources */ = {isa = PBXBuildFile; fileRef = D57E3D74226B727E005C018F /* GoogleTranslate.json */; };
 		D57E3D77226B729F005C018F /* TranslateServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D57E3D76226B729F005C018F /* TranslateServiceTests.swift */; };
 		D57E3D7B226B79F1005C018F /* OpenWeatherMap.json in Resources */ = {isa = PBXBuildFile; fileRef = D57E3D7A226B79F1005C018F /* OpenWeatherMap.json */; };
@@ -51,6 +52,8 @@
 		D532438F226934B7009632D9 /* FakeResponseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeResponseData.swift; sourceTree = "<group>"; };
 		D532439122693503009632D9 /* URLSessionFake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionFake.swift; sourceTree = "<group>"; };
 		D532439522693583009632D9 /* CurrencyServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyServiceTests.swift; sourceTree = "<group>"; };
+		D57606A2234E2ABA008C5DA6 /* debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = debug.xcconfig; sourceTree = "<group>"; };
+		D57606A3234E2AD6008C5DA6 /* release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = release.xcconfig; sourceTree = "<group>"; };
 		D57E3D74226B727E005C018F /* GoogleTranslate.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = GoogleTranslate.json; sourceTree = "<group>"; };
 		D57E3D76226B729F005C018F /* TranslateServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateServiceTests.swift; sourceTree = "<group>"; };
 		D57E3D7A226B79F1005C018F /* OpenWeatherMap.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = OpenWeatherMap.json; sourceTree = "<group>"; };
@@ -59,7 +62,7 @@
 		D58A1BF4225A7EDB00D87D97 /* TranslateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateService.swift; sourceTree = "<group>"; };
 		D58A1BF6225A809800D87D97 /* Translate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translate.swift; sourceTree = "<group>"; };
 		D58A1BF9225AB26300D87D97 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
-		D5B2663522569EF500607635 /* LeBaluchon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeBaluchon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5B2663522569EF500607635 /* Le Baluchon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Le Baluchon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5B2663822569EF500607635 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5B2663A22569EF500607635 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D5B2663D22569EF500607635 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -72,9 +75,7 @@
 		D5D17F542258ED590049FB02 /* CurrencyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyController.swift; sourceTree = "<group>"; };
 		D5D17F56225901000049FB02 /* CurrencyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyService.swift; sourceTree = "<group>"; };
 		D5D17F5922590C660049FB02 /* debug.example.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = debug.example.xcconfig; sourceTree = "<group>"; };
-		D5D17F5A22590D260049FB02 /* debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = debug.xcconfig; sourceTree = "<group>"; };
 		D5D17F5B22590DB10049FB02 /* release.example.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = release.example.xcconfig; sourceTree = "<group>"; };
-		D5D17F5C22590E060049FB02 /* release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = release.xcconfig; sourceTree = "<group>"; };
 		D5D17F5D225937910049FB02 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -154,7 +155,7 @@
 		D5B2663622569EF500607635 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D5B2663522569EF500607635 /* LeBaluchon.app */,
+				D5B2663522569EF500607635 /* Le Baluchon.app */,
 				D5B2664C22569EF800607635 /* LeBaluchonTests.xctest */,
 			);
 			name = Products;
@@ -223,9 +224,9 @@
 			isa = PBXGroup;
 			children = (
 				D5D17F5922590C660049FB02 /* debug.example.xcconfig */,
-				D5D17F5A22590D260049FB02 /* debug.xcconfig */,
 				D5D17F5B22590DB10049FB02 /* release.example.xcconfig */,
-				D5D17F5C22590E060049FB02 /* release.xcconfig */,
+				D57606A3234E2AD6008C5DA6 /* release.xcconfig */,
+				D57606A2234E2ABA008C5DA6 /* debug.xcconfig */,
 			);
 			path = BuildConfig;
 			sourceTree = "<group>";
@@ -240,6 +241,7 @@
 				D5B2663122569EF500607635 /* Sources */,
 				D5B2663222569EF500607635 /* Frameworks */,
 				D5B2663322569EF500607635 /* Resources */,
+				D57606A5234E2DBD008C5DA6 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -247,7 +249,7 @@
 			);
 			name = LeBaluchon;
 			productName = LeBaluchon;
-			productReference = D5B2663522569EF500607635 /* LeBaluchon.app */;
+			productReference = D5B2663522569EF500607635 /* Le Baluchon.app */;
 			productType = "com.apple.product-type.application";
 		};
 		D5B2664B22569EF800607635 /* LeBaluchonTests */ = {
@@ -311,6 +313,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D57606A4234E2AD6008C5DA6 /* release.xcconfig in Resources */,
 				D5B2664622569EF800607635 /* LaunchScreen.storyboard in Resources */,
 				D5B2664322569EF800607635 /* Assets.xcassets in Resources */,
 				D5B2663E22569EF500607635 /* Main.storyboard in Resources */,
@@ -328,6 +331,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D57606A5234E2DBD008C5DA6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\nif [ -f ./LeBaluchon/BuildConfig/debug-coucou.xcconfig ]; then\n    echo \"./LeBaluchon/BuildConfig/debug-coucou.xcconfig exist\"\nelse \n    touch ./LeBaluchon/BuildConfig/debug-coucou.xcconfig\n    echo -e \"API_CLIENT_FIXER_SECRET = ${API_CLIENT_FIXER_SECRET}\\nAPI_CLIENT_TRANSLATE_SECRET = ${API_CLIENT_TRANSLATE_SECRET}\\nAPI_CLIENT_WEATHER_SECRET = ${API_CLIENT_WEATHER_SECRET}\" > ./LeBaluchon/BuildConfig/debug-coucou.xcconfig\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D5B2663122569EF500607635 /* Sources */ = {
@@ -510,7 +534,6 @@
 		};
 		D5B2665622569EF900607635 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D5D17F5A22590D260049FB02 /* debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -521,8 +544,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.xenox.LeBaluchon;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xenox.lebaluchon;
+				PRODUCT_NAME = "Le Baluchon";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -530,7 +553,6 @@
 		};
 		D5B2665722569EF900607635 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D5D17F5C22590E060049FB02 /* release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -541,8 +563,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.xenox.LeBaluchon;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xenox.lebaluchon;
+				PRODUCT_NAME = "Le Baluchon";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
